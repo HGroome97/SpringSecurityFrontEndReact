@@ -19,14 +19,11 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
         super();
     }
 
-    // API
-
     @Override
     public void addViewControllers(final ViewControllerRegistry registry) {
         super.addViewControllers(registry);
 
         registry.addViewController("/anonymous.html");
-
         registry.addViewController("/login.html");
         registry.addViewController("/homepage.html");
         registry.addViewController("/admin/adminpage.html");
