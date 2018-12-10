@@ -1,4 +1,4 @@
-package org.baeldung.spring;
+package com.qa.spring;
 
 import javax.sql.DataSource;
 

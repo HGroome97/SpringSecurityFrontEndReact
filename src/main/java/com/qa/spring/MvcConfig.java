@@ -1,4 +1,4 @@
-package org.baeldung.spring;
+package com.qa.spring;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

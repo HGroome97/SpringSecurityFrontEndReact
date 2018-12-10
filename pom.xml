@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>spring-security-react</artifactId>
     <version>0.1-SNAPSHOT</version>
-	<groupId>com.baeldung</groupId>
+	<groupId>com.qa</groupId>
     <name>spring-security-react</name>
     <packaging>war</packaging>
 
