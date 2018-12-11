@@ -28,14 +28,16 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
         registry.addViewController("/anonymous.html");
         registry.addViewController("/login.html");
         registry.addViewController("/homepage.html");
-        registry.addViewController("/admin/adminpage.html");
+        registry.addViewController("/trainingmanager/adminpage.html");
         registry.addViewController("/accessDenied");
+        registry.addViewController("/trainee/account.html");
+        registry.addViewController("/trainee/CV.html");
+        
     }
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/static/**").addResourceLocations("/WEB-INF/view/react/build/static/");
-
         registry.addResourceHandler("/*.js").addResourceLocations("/WEB-INF/view/react/build/");
         registry.addResourceHandler("/*.json").addResourceLocations("/WEB-INF/view/react/build/");
         registry.addResourceHandler("/*.ico").addResourceLocations("/WEB-INF/view/react/build/");

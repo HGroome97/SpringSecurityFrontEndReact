@@ -42,7 +42,7 @@ public class SecSecurityConfig extends WebSecurityConfigurerAdapter {
         http
         .csrf().disable()
         .authorizeRequests()
-        	.antMatchers("/admin/**").access("hasRole('ROLE_ADMIN')")
+        	.antMatchers("/trainingmanager/**").access("hasRole('ROLE_TRAINING_MANAGER')")
         	.antMatchers("/anonymous*").anonymous()
         	.antMatchers(HttpMethod.GET, "/index*", "/static/**", "/*.js", "/*.json", "/*.ico").permitAll()
         	.anyRequest().authenticated()
