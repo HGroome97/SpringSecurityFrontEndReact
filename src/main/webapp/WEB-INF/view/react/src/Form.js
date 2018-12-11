@@ -33,7 +33,7 @@ class Form extends Component {
     if(errmsg){
       this.setState((prevState) => ({
         failure: '',
-        errcount: prevState.errcount + 1, 
+        errcount: prevState.errcount + 1,
         errmsgs: {...prevState.errmsgs, [field]: errmsg}
       }))
     } else {
@@ -64,6 +64,7 @@ class Form extends Component {
     return (
         <form {...this.props} onSubmit={this.handleSubmit} ref={fm => {this.form=fm}} >
           {inputs}
+          <button onClick = "href='./register'">or register</button>
           {errors}
         </form>
     )

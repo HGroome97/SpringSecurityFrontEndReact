@@ -13,7 +13,7 @@ const inputs = [{
   type: "password"
 },{
   type: "submit",
-  value: "Submit",
+  value: "Log in",
   className: "btn"
 }]
 

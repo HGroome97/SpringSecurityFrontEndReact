@@ -32,6 +32,8 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
         registry.addViewController("/accessDenied");
         registry.addViewController("/trainee/account.html");
         registry.addViewController("/trainee/CV.html");
+        registry.addViewController("/register.html");
+        
         
     }
 
